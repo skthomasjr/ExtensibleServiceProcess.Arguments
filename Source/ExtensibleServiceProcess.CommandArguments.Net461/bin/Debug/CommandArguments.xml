@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CommandArguments</name>
+    </assembly>
+    <members>
+        <member name="T:CommandArguments.Argument">
+            <summary>
+            An individual argument.
+            </summary>
+        </member>
+        <member name="M:CommandArguments.Argument.#ctor(CommandArguments.Arguments)">
+            <summary>
+            Initializes a new instance of the<see cref="T:CommandArguments.Argument" /> class.
+            </summary>
+            <param name="arguments">The set of arguments from which the argument originated.</param>
+        </member>
+        <member name="P:CommandArguments.Argument.Action">
+            <summary>
+            The action to perform when the argument is specified.
+            </summary>
+        </member>
+        <member name="P:CommandArguments.Argument.Arguments">
+            <summary>
+            The set of arguments from which the argument originated.
+            </summary>
+        </member>
+        <member name="P:CommandArguments.Argument.Flags">
+            <summary>
+            The possible flags used to denote the argument.
+            </summary>
+        </member>
+        <member name="P:CommandArguments.Argument.TerminateAfterExecution">
+            <summary>
+            Determines if additional arguments should be processed if this argument is encountered and executed.
+            </summary>
+        </member>
+        <member name="T:CommandArguments.Arguments">
+            <summary>
+            All the arguments.
+            </summary>
+        </member>
+        <member name="M:CommandArguments.Arguments.#ctor(System.String[],System.Collections.Generic.IEnumerable{CommandArguments.IArgument})">
+            <summary>
+            Initializes a new instance of the <see cref="T:CommandArguments.Arguments" /> class.
+            </summary>
+            <param name="source">The source arguments.</param>
+            <param name="arguments">Arguments to process.</param>
+        </member>
+        <member name="M:CommandArguments.Arguments.#ctor(System.String[])">
+            <summary>
+            Initializes a new instance of the<see cref="T:CommandArguments.Arguments" /> class.
+            </summary>
+            <param name="source">The source arguments.</param>
+        </member>
+        <member name="M:CommandArguments.Arguments.#ctor">
+            <summary>
+            Initializes a new instance of the<see cref="T:CommandArguments.Arguments" /> class.
+            </summary>
+        </member>
+        <member name="P:CommandArguments.Arguments.Source">
+            <summary>
+            The source arguments.
+            </summary>
+        </member>
+        <member name="P:CommandArguments.Arguments.ArgumentSeparators">
+            <summary>
+            The strings separating the arguments.
+            </summary>
+        </member>
+        <member name="P:CommandArguments.Arguments.ParameterSeparator">
+            <summary>
+            The character that seperates the flag from the parameter.
+            </summary>
+        </member>
+        <member name="M:CommandArguments.Arguments.Process">
+            <summary>
+            Executes the action on each of the arguments encountered.
+            </summary>
+            <returns>The processed arguments.</returns>
+        </member>
+        <member name="M:CommandArguments.Arguments.NewArguments(System.String[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:CommandArguments.Arguments" /> class with the specified source arguments.
+            </summary>
+            <param name="source">The source arguments.</param>
+            <returns>The arguments with the specified source arguments.</returns>
+        </member>
+        <member name="M:CommandArguments.Arguments.NewArguments(System.String[],System.Collections.Generic.IEnumerable{CommandArguments.IArgument})">
+            <summary>
+            Initializes a new instance of <see cref="T:CommandArguments.Arguments" /> class with the specified source arguments and injected arguments.
+            </summary>
+            <param name="source">The source arguments.</param>
+            <param name="arguments">Arguments to inject.</param>
+            <returns>The arguments with the specified source arguments and injected arguments.</returns>
+        </member>
+        <member name="T:CommandArguments.FluentExtensions">
+            <summary>
+            Extension methods to support fluent interaction of arguments.
+            </summary>
+        </member>
+        <member name="M:CommandArguments.FluentExtensions.AddArgument(CommandArguments.Arguments,System.Action{System.String})">
+            <summary>
+            Adds an <see cref="T:CommandArguments.Argument" />.
+            </summary>
+            <param name="arguments">The <see cref="T:CommandArguments.Arguments" /></param>
+            <param name="action"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommandArguments.FluentExtensions.AddArgument(CommandArguments.Arguments,System.String[])">
+            <summary>
+            Adds an <see cref="T:CommandArguments.Argument" />.
+            </summary>
+            <param name="arguments">The <see cref="T:CommandArguments.Arguments" /></param>
+            <param name="flags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommandArguments.FluentExtensions.AddArgument(CommandArguments.Arguments)">
+            <summary>
+            Adds an <see cref="T:CommandArguments.Argument" />.
+            </summary>
+            <param name="arguments">The <see cref="T:CommandArguments.Arguments" /></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommandArguments.FluentExtensions.AddArgument(CommandArguments.Argument,System.Action{System.String})">
+            <summary>
+            Adds an <see cref="T:CommandArguments.Argument" />.
+            </summary>
+            <param name="argument">The <see cref="T:CommandArguments.Argument" /></param>
+            <param name="action"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommandArguments.FluentExtensions.AddArgument(CommandArguments.Argument,System.String[])">
+            <summary>
+            Adds an <see cref="T:CommandArguments.Argument" />.
+            </summary>
+            <param name="argument">The <see cref="T:CommandArguments.Argument" /></param>
+            <param name="flags"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommandArguments.FluentExtensions.AddArgument(CommandArguments.Argument)">
+            <summary>
+            Adds an <see cref="T:CommandArguments.Argument" />.
+            </summary>
+            <param name="argument">The <see cref="T:CommandArguments.Argument" /></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommandArguments.FluentExtensions.Process(CommandArguments.Argument)">
+            <summary>
+            Process the <see cref="T:CommandArguments.Arguments" />.
+            </summary>
+            <param name="argument">The <see cref="T:CommandArguments.Argument" /></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommandArguments.FluentExtensions.TerminateAfterExecution(CommandArguments.Argument)">
+            <summary>
+            Terminates after executing the current <see cref="T:CommandArguments.Argument" />.
+            </summary>
+            <param name="argument">The <see cref="T:CommandArguments.Argument" /></param>
+            <returns></returns>
+        </member>
+        <member name="M:CommandArguments.FluentExtensions.UsingArgumentSeparators(CommandArguments.Arguments,System.String[])">
+            <summary>
+            Uses the argument separators with the current <see cref="T:CommandArguments.Arguments" />.
+            </summary>
+            <param name="arguments">The <see cref="T:CommandArguments.Arguments" /></param>
+            <param name="separators">The argument separators.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommandArguments.FluentExtensions.UsingParameterSeparator(CommandArguments.Arguments,System.Char)">
+            <summary>
+            Uses the parameter separator with the current <see cref="T:CommandArguments.Arguments" />.
+            </summary>
+            <param name="arguments">The <see cref="T:CommandArguments.Arguments" /></param>
+            <param name="separator">The searator character.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommandArguments.FluentExtensions.UsingSource(CommandArguments.Arguments,System.String[])">
+            <summary>
+            Uses the source parameters with the current <see cref="T:CommandArguments.Arguments" />.
+            </summary>
+            <param name="arguments">The <see cref="T:CommandArguments.Arguments" /></param>
+            <param name="source">The source arguments.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommandArguments.FluentExtensions.WithAction(CommandArguments.Argument,System.Action{System.String})">
+            <summary>
+            Sets the action of the current <see cref="T:CommandArguments.Argument" />.
+            </summary>
+            <param name="argument">The <see cref="T:CommandArguments.Argument" /></param>
+            <param name="action">The action to execute.</param>
+            <returns></returns>
+        </member>
+        <member name="M:CommandArguments.FluentExtensions.WithFlags(CommandArguments.Argument,System.String[])">
+            <summary>
+            Sets the flags of the current <see cref="T:CommandArguments.Argument" />.
+            </summary>
+            <param name="argument">The <see cref="T:CommandArguments.Argument" /></param>
+            <param name="flags">The flags.</param>
+            <returns></returns>
+        </member>
+        <member name="T:CommandArguments.IArgument">
+            <summary>
+            Interface for an individual argument.
+            </summary>
+        </member>
+        <member name="P:CommandArguments.IArgument.Action">
+            <summary>
+            The action to perform when the argument is specified.
+            </summary>
+        </member>
+        <member name="P:CommandArguments.IArgument.Flags">
+            <summary>
+            The possible flags used to denote the argument.
+            </summary>
+        </member>
+        <member name="P:CommandArguments.IArgument.TerminateAfterExecution">
+            <summary>
+            Determines if additional arguments should be processed if this argument is encountered and executed.
+            </summary>
+        </member>
+    </members>
+</doc>
