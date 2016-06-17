@@ -10,5 +10,9 @@
     <licenseUrl>https://raw.githubusercontent.com/skthomasjr/ExtensibleServiceProcess.Arguments/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/skthomasjr/ExtensibleServiceProcess.Arguments</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="Arguments.NET" version="1.0.0" />
+      <dependency id="ExtensibleServiceProcess" version="1.0.0" />
+    </dependencies>
   </metadata>
 </package>
