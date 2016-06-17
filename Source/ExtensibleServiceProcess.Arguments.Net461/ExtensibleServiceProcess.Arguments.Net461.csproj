@@ -32,10 +32,6 @@
     <DocumentationFile>bin\Release\ExtensibleServiceProcess.Arguments.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Arguments, Version=1.0.120.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Arguments.1.0.120\lib\net461\Arguments.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="ExtensibleServiceProcess, Version=1.0.17.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ExtensibleServiceProcess.1.0.17\lib\net461\ExtensibleServiceProcess.dll</HintPath>
       <Private>True</Private>
