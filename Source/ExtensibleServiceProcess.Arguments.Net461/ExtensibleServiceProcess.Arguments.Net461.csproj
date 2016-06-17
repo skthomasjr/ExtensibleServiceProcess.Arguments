@@ -7,8 +7,8 @@
     <ProjectGuid>{086F9FD1-0A9A-4118-8066-51423E4E8ED4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ExtensibleServiceProcess.CommandArguments</RootNamespace>
-    <AssemblyName>ExtensibleServiceProcess.CommandArguments</AssemblyName>
+    <RootNamespace>ExtensibleServiceProcess.Arguments</RootNamespace>
+    <AssemblyName>ExtensibleServiceProcess.Arguments</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -20,7 +20,7 @@
     <DefineConstants>TRACE;DEBUG;NET461</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\ExtensibleServiceProcess.CommandArguments.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\ExtensibleServiceProcess.Arguments.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,11 +29,11 @@
     <DefineConstants>TRACE;NET461</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\ExtensibleServiceProcess.CommandArguments.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\ExtensibleServiceProcess.Arguments.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CommandArguments, Version=1.0.120.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CommandArguments.1.0.120\lib\net461\CommandArguments.dll</HintPath>
+    <Reference Include="Arguments, Version=1.0.120.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Arguments.1.0.120\lib\net461\Arguments.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ExtensibleServiceProcess, Version=1.0.17.0, Culture=neutral, processorArchitecture=MSIL">

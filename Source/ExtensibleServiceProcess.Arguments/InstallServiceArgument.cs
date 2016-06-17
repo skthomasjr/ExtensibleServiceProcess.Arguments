@@ -1,7 +1,7 @@
 ﻿using System;
-using CommandArguments;
+using Arguments;
 
-namespace ExtensibleServiceProcess.CommandArguments
+namespace ExtensibleServiceProcess.Arguments
 {
     /// <summary>
     /// Class InstallServiceArgument.

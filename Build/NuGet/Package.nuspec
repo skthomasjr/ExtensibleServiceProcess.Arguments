@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>ExtensibleServiceProcess.CommandArguments</id>
+    <id>ExtensibleServiceProcess.Arguments</id>
     <version>0.0.0</version>
     <authors>Scott Keith Thomas, Jr.</authors>
-    <description>ExtensibleServiceProcess.CommandArguments is the integration of CommandArguments into ExtensibleServiceProcess.</description>
+    <description>ExtensibleServiceProcess.Arguments is the integration of Arguments.NET into ExtensibleServiceProcess.</description>
     <tags>extensible service windows arguments batch cmd command-line commandline switch switches</tags>
-    <iconUrl>https://raw.githubusercontent.com/skthomasjr/ExtensibleServiceProcess.CommandArguments/master/Build/NuGet/Package.png</iconUrl>
-    <licenseUrl>https://raw.githubusercontent.com/skthomasjr/ExtensibleServiceProcess.CommandArguments/master/LICENSE.md</licenseUrl>
-    <projectUrl>https://github.com/skthomasjr/ExtensibleServiceProcess.CommandArguments</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/skthomasjr/ExtensibleServiceProcess.Arguments/master/Build/NuGet/Package.png</iconUrl>
+    <licenseUrl>https://raw.githubusercontent.com/skthomasjr/ExtensibleServiceProcess.Arguments/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/skthomasjr/ExtensibleServiceProcess.Arguments</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
   </metadata>
 </package>

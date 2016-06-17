@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ExtensibleServiceProcess.CommandArguments", "ExtensibleServiceProcess.CommandArguments\ExtensibleServiceProcess.CommandArguments.shproj", "{EC489959-AE3E-422D-8521-D301FD1937D0}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ExtensibleServiceProcess.Arguments", "ExtensibleServiceProcess.Arguments\ExtensibleServiceProcess.Arguments.shproj", "{EC489959-AE3E-422D-8521-D301FD1937D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensibleServiceProcess.CommandArguments.Net461", "ExtensibleServiceProcess.CommandArguments.Net461\ExtensibleServiceProcess.CommandArguments.Net461.csproj", "{086F9FD1-0A9A-4118-8066-51423E4E8ED4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensibleServiceProcess.Arguments.Net461", "ExtensibleServiceProcess.Arguments.Net461\ExtensibleServiceProcess.Arguments.Net461.csproj", "{086F9FD1-0A9A-4118-8066-51423E4E8ED4}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		ExtensibleServiceProcess.CommandArguments\ExtensibleServiceProcess.CommandArguments.projitems*{ec489959-ae3e-422d-8521-d301fd1937d0}*SharedItemsImports = 13
+		ExtensibleServiceProcess.Arguments\ExtensibleServiceProcess.Arguments.projitems*{ec489959-ae3e-422d-8521-d301fd1937d0}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
