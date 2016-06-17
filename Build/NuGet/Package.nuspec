@@ -14,5 +14,9 @@
       <dependency id="Arguments.NET" version="1.0.0" />
       <dependency id="ExtensibleServiceProcess" version="1.0.0" />
     </dependencies>
+	<frameworkAssemblies>
+      <frameworkAssembly assemblyName="System" targetFramework="" />
+      <frameworkAssembly assemblyName="System.ComponentModel.Composition" targetFramework="" />
+    </frameworkAssemblies>
   </metadata>
 </package>

@@ -5,17 +5,17 @@ using Arguments;
 namespace ExtensibleServiceProcess.Arguments
 {
     /// <summary>
-    /// The argument used to install an ExtensibleServiceProcess application.
+    /// The argument used to uninstall an ExtensibleServiceProcess application.
     /// </summary>
     /// <seealso cref="IArgument" />
-    public class InstallServiceArgument : IArgument
+    public class UninstallServiceArgument : IArgument
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="InstallServiceArgument"/> class.
+        /// Initializes a new instance of the <see cref="UninstallServiceArgument"/> class.
         /// </summary>
         /// <param name="service">The argument action target service.</param>
         [ImportingConstructor]
-        public InstallServiceArgument(ExtensibleServiceBase service)
+        public UninstallServiceArgument(ExtensibleServiceBase service)
         {
             Action = InstallService;
             Target = service;
@@ -31,7 +31,7 @@ namespace ExtensibleServiceProcess.Arguments
         /// The possible flags used to denote the argument.
         /// </summary>
         /// <value>The flags.</value>
-        public string[] Flags { get; set; } = { "i", "install" };
+        public string[] Flags { get; set; } = { "u", "uninstall" };
 
         /// <summary>
         /// Gets or sets the argument action target.
@@ -48,7 +48,7 @@ namespace ExtensibleServiceProcess.Arguments
         private void InstallService(object target, string parameter)
         {
             var service = target as ExtensibleServiceBase;
-            service?.InstallService();
+            service?.UninstallService();
         }
     }
 }

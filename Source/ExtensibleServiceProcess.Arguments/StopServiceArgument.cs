@@ -5,19 +5,19 @@ using Arguments;
 namespace ExtensibleServiceProcess.Arguments
 {
     /// <summary>
-    /// The argument used to install an ExtensibleServiceProcess application.
+    /// The argument used to stop an ExtensibleServiceProcess application.
     /// </summary>
     /// <seealso cref="IArgument" />
-    public class InstallServiceArgument : IArgument
+    public class StopServiceArgument : IArgument
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="InstallServiceArgument"/> class.
+        /// Initializes a new instance of the <see cref="StopServiceArgument"/> class.
         /// </summary>
         /// <param name="service">The argument action target service.</param>
         [ImportingConstructor]
-        public InstallServiceArgument(ExtensibleServiceBase service)
+        public StopServiceArgument(ExtensibleServiceBase service)
         {
-            Action = InstallService;
+            Action = StopService;
             Target = service;
         }
 
@@ -31,7 +31,7 @@ namespace ExtensibleServiceProcess.Arguments
         /// The possible flags used to denote the argument.
         /// </summary>
         /// <value>The flags.</value>
-        public string[] Flags { get; set; } = { "i", "install" };
+        public string[] Flags { get; set; } = { "t", "stop" };
 
         /// <summary>
         /// Gets or sets the argument action target.
@@ -45,10 +45,10 @@ namespace ExtensibleServiceProcess.Arguments
         /// <value><c>true</c> if terminate after execution; otherwise, <c>false</c>.</value>
         public bool TerminateAfterExecution { get; set; } = true;
 
-        private void InstallService(object target, string parameter)
+        private void StopService(object target, string parameter)
         {
             var service = target as ExtensibleServiceBase;
-            service?.InstallService();
+            service?.StopService();
         }
     }
 }

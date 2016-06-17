@@ -7,6 +7,8 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ExtensibleServiceProcess.Ar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensibleServiceProcess.Arguments.Net461", "ExtensibleServiceProcess.Arguments.Net461\ExtensibleServiceProcess.Arguments.Net461.csproj", "{086F9FD1-0A9A-4118-8066-51423E4E8ED4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensibleServiceProcess.Arguments.SampleConsole", "ExtensibleServiceProcess.Arguments.SampleConsole\ExtensibleServiceProcess.Arguments.SampleConsole.csproj", "{BF21F6FF-A75A-44A2-AE6A-997373E7F4DB}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		ExtensibleServiceProcess.Arguments\ExtensibleServiceProcess.Arguments.projitems*{ec489959-ae3e-422d-8521-d301fd1937d0}*SharedItemsImports = 13
@@ -20,6 +22,10 @@ Global
 		{086F9FD1-0A9A-4118-8066-51423E4E8ED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{086F9FD1-0A9A-4118-8066-51423E4E8ED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{086F9FD1-0A9A-4118-8066-51423E4E8ED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF21F6FF-A75A-44A2-AE6A-997373E7F4DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF21F6FF-A75A-44A2-AE6A-997373E7F4DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF21F6FF-A75A-44A2-AE6A-997373E7F4DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF21F6FF-A75A-44A2-AE6A-997373E7F4DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

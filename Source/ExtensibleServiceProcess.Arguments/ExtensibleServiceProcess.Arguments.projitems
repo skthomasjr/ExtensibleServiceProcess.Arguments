@@ -9,5 +9,8 @@
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)InstallServiceArgument.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Properties\AssemblyInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StartServiceArgument.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)StopServiceArgument.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)UninstallServiceArgument.cs" />
   </ItemGroup>
 </Project>
