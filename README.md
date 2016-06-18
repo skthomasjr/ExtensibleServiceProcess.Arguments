@@ -8,3 +8,17 @@
 [![Join the chat at https://gitter.im/skthomasjr/ExtensibleServiceProcess.Arguments](https://badges.gitter.im/skthomasjr/ExtensibleServiceProcess.Arguments.svg)](https://gitter.im/skthomasjr/ExtensibleServiceProcess.Arguments?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ExtensibleServiceProcess.Arguments is the integration of Arguments.NET into ExtensibleServiceProcess.
+
+Install the NuGet package:
+```
+PM> Install-Package ExtensibleServiceProcess.Arguments
+```
+Use your favorite IoC container to inject instances of IArgument into the ArgumentManager. See the sample console for additional details.
+
+The following arguments will be supported for your implementation of ExtensibleServiceBase:
+'''
+-i, -install     Install the Windows service.
+-u, -uninstall   Uninstall the Windows service.
+-s, -start       Start the Windows service.
+-t, -stop        Stop the Windows service.
+'''
