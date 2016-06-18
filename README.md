@@ -13,7 +13,7 @@ Install the NuGet package:
 ```
 PM> Install-Package ExtensibleServiceProcess.Arguments
 ```
-Use your favorite IoC container to inject instances of IArgument into the ArgumentManager. See the sample console for additional details.
+Use your favorite IoC container to inject instances of IArgument into the ArgumentManager. See the sample code for additional details.
 
 The following arguments will be supported for your implementation of ExtensibleServiceBase:
 ```
